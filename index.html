@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Памятка участника хакатона</title>
-  <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <title>Городской фестиваль</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <main class="page">
-    <h1>Памятка участника хакатона</h1>
-    <h2>Что взять с собой</h2>
-    <div class="items">
-      <div>Ноутбук и зарядное устройство</div>
-      <div>Наушники</div>
-      <div>Документ</div>
-      <div>Бутылка воды</div>
-    </div>
+    <main class="event">
+        <h1 class="event__title">Городской фестиваль</h1>
+        
+        <section class="event__section">
+            <h2>Что взять с собой</h2>
+            <ul class="event__items">
+                <li class="event__item">Бутылка воды</li>
+                <li class="event__item">Заряженный телефон</li>
+                <li class="event__item">Удобная обувь</li>
+            </ul>
+        </section>
+        
+        <section class="event__section">
+            <h2>Порядок регистрации</h2>
+            <ol class="event__steps">
+                <li class="event__step">Заполнить форму (указывайте <strong>только реальные</strong> данные)</li>
+                <li class="event__step">Получить письмо <em>(обычно приходит за 5 минут)</em></li>
+                <li class="event__step">Показать QR-код на входе</li>
+            </ol>
+        </section>
 
-    <h2>Порядок регистрации</h2>
-    <div class="steps">
-      <div>Подойти к стойке регистрации</div>
-      <div>Назвать команду</div>
-      <div>Получить бейдж</div>
-    </div>
+        <section class="event__section event__review">
+            <h2>Отзывы прошлых лет</h2>
+            <blockquote class="event__quote">
+                <p>«Это лучшее городское событие осени! Организация на высоте.»</p>
+                <cite class="event__cite">— Алексей, участник феста 2025</cite>
+            </blockquote>
+        </section>
 
-    <div class="quote">Хороший интерфейс начинается с понятной структуры.</div>
-    <div class="event-date">26 сентября 2026, 10:00</div>
-    <div class="contacts">Оргкомитет: hello@example.com</div>
-  </main>
+        <section class="event__section">
+            <h2>Словарь мероприятия</h2>
+            <dl class="event__glossary">
+                <dt class="event__term">Семантика</dt>
+                <dd class="event__definition">Использование HTML-тегов по их прямому смысловому назначению для корректного понимания структуры машинами и браузерами.</dd>
+                
+                <dt class="event__term">Доступность</dt>
+                <dd class="event__definition">Создание интерфейсов, которыми одинаково удобно пользоваться всем людям, включая пользователей с ограниченными возможностями здоровья.</dd>
+            </dl>
+        </section>
+        
+        <p class="event__date">
+            <time datetime="2026-10-12T11:00">12 октября 2026, 11:00</time>
+        </p>
+        
+        <address class="event__contact">
+            Оргкомитет: <a class="event__link" href="mailto:city@example.com">city@example.com</a>
+        </address>
+    </main>
 </body>
 </html>
